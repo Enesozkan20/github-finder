@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: black;
+    color: white;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+header,
+form,
+main {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.4px);
+    -webkit-backdrop-filter: blur(2.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+header {
+    padding: 10px;
+    border-radius: 0 0 16px 16px;
+    font-size: 32px;
+}
+
+form {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 16px;
+}
+
+form h1 {
+    font-weight: 500;
+}
+
+form div {
+    display: flex;
+}
+
+form div input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    font-size: 10px;
+}
+
+form div button {
+    padding: 5px 30px;
+    background: rgb(0, 76, 147);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 0 10px 10px 0;
+}
+
+main {
+    display: flex;
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 16px;
+    gap: 20px;
+}
+
+@media(max-width:600px) {
+    body {
+        padding: 0 20px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    main img {
+        margin: auto;
+    }
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+}
+
+#left img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+#left a {
+    width: 100%;
+    background: rgb(0, 76, 147);
+    padding: 8px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#right div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#right span {
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+
+#right span:nth-child(1) {
+    background: #0e2954;
+}
+
+#right span:nth-child(2) {
+    background: #1f6e8c;
+}
+
+#right span:nth-child(3) {
+    background: #2e8a99;
+}
+
+#right span:nth-child(4) {
+    background: #84a7a1;
+}
+
+#right ul {
+    list-style: none;
+    background: black;
+    border-radius: 10px;
+}
+
+ul li {
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+ul li:hover {
+    border-radius: 10px;
+    background: rgba(128, 128, 128, 0.35);
+}
+
+ul li:last-child {
+    border: none;
+}
